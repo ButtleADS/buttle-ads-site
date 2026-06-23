@@ -1,0 +1,101 @@
+
+
+
+.footer__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+}
+
+.footer {
+  background: var(--c-text); /* slate-900 */
+  color: #fff;
+  padding: 64px 0;
+}
+
+.footer__grid {
+  display: grid;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+/* Колонка "про нас" */
+.footer__about { grid-column: span 2; }
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer__logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.footer__brand-name {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+}
+
+.footer__about-text {
+  color: #94a3b8; /* slate-400 */
+  max-width: 384px;
+}
+
+/* Колонки з лінками */
+.footer__col-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.footer__list--muted {
+  color: #94a3b8; /* slate-400 */
+}
+
+.footer__link {
+  color: #94a3b8;
+  transition: color var(--t-base);
+}
+.footer__link:hover { color: #fff; }
+
+/* Нижня смужка */
+.footer__bottom {
+  border-top: 1px solid #1e293b; /* slate-800 */
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__copyright {
+  color: #64748b; /* slate-500 */
+  font-size: var(--fs-sm);
+}
+
+.footer__legal {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__legal-link {
+  color: #64748b;
+  font-size: var(--fs-sm);
+  transition: color var(--t-base);
+}
+.footer__legal-link:hover { color: #fff; }
+
+@media (min-width: 768px) {
+  .footer__grid   { grid-template-columns: repeat(4, 1fr); }
+  .footer__bottom { flex-direction: row; justify-content: space-between; }
+}

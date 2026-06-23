@@ -1,0 +1,123 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;  
+  transition: var(--t-base);
+}
+
+.header__bg-white {
+  background: var(--c-header-90);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.header__bg-trasparent {
+  background: transparent;
+
+}
+/* ── Elements ── */
+.header__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.header__logo-img {
+  height: var(--logo-size);
+  width: var(--logo-size);
+  object-fit: contain;
+}
+
+.header__logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--c-text);
+  transition: var(--t-base);
+}
+
+.header__nav {
+  display: none;
+  align-items: center;
+  gap: var(--nav-gap);
+}
+
+.header__nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--c-muted);
+  transition: color 0.3s ease;
+}
+
+.header__nav-link:hover {
+  color: var(--color-brand);
+}
+
+.header__nav-link--active {
+  color: var(--c-brand);
+}
+
+.header__cta {
+  text-decoration: none;
+}
+
+.header__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--btn-height);
+  padding: 0 var(--btn-px);
+  font-size: var(--btn-font-size);
+  font-weight: 500;
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  border: none;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: background 0.3s ease;
+}
+
+.header__cta-btn:hover {
+  background: var(--btn-bg-hover);
+}
+
+.header__burger {
+  display: flex;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--c-text);
+  transition: color 0.3s ease;
+}
+
+/* ── Responsive ── */
+@media (min-width: 768px) {
+  .header__nav {
+    display: flex;
+  }
+
+  .header__burger {
+    display: none;
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButtleADS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="about-page">
+    <div class="light-header-wrapper"> 
+        <header>
+            <div class="logo">
+                <img src="img/ButtleADS.svg" alt="Logo">
+                <span class="logo-text">ButtleADS</span>
+            </div>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="active"><a href="/index.html">Головна</a></li>
+                    <li><a href="/about.html">Для рекламодавців</a></li>
+                    <li><a href="#">Дизайнер</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn">Зв'язатися</button>
+        </header>
+
+        <section class="about-hero">
+    <div class="about-hero-container">
+        <p class="gold-label">ДЛЯ РЕКЛАМОДАВЦІВ</p>
+        <h1 class="main-title">Реклама, яка <span>працює</span></h1>
+        <p class="description">
+            Поставте ваш бренд буквально в руки тисячам потенційних клієнтів. 
+            Органічний контакт, позитивні емоції, запам'ятовуваність.
+        </p>
+    </div>
+</section>
+
+    </div>
+
+    <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('header nav');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        burger.classList.toggle('active');
+    });
+    </script>
+
+    <footer class="main-footer">
+    <div class="container container--footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="img/ButtleADS.svg" alt="Logo">
+                    <span class="logo-text">ButtleADS</span>
+                </div>
+                <p class="footer-about">
+                    Інноваційна рекламна платформа, яка поєднує користь для людей з ефективністю для брендів.
+                </p>
+            </div>
+
+            <div class="footer-nav">
+                <h3>Навігація</h3>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Для рекламодавців</a></li>
+                    <li><a href="#">Дизайнер</a></li>
+                    <li><a href="#">3D Тур</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contacts">
+                <h3>Контакти</h3>
+                <ul>
+                    <li><a href="mailto:hello@buttleads.com">hello@buttleads.com</a></li>
+                    <li><a href="tel:+380501234567">+38 (050) 123-45-67</a></li>
+                    <li>Київ, Україна</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ButtleADS. Всі права захищені.</p>
+            <div class="footer-legal">
+                <a href="#">Політика конфіденційності</a>
+                <a href="#">Умови використання</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
