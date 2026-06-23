@@ -27,6 +27,7 @@
   --fs-3xl:     32px;
   --fs-4xl:     40px;
   --fs-5xl:     48px;
+  --fs-6xl:     60px;
   --fs-7xl:     72px;
   --fs-8xl:     96px;
 
@@ -81,9 +82,13 @@
 /* Base */
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+  scrollbar-width: none; 
 }
 
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;

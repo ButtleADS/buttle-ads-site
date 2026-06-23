@@ -1,4 +1,8 @@
-.showcase { overflow: hidden; background: #fff; }
+.showcase {
+  overflow: hidden;
+  background: #fff;
+  padding: 80px 0 0 0;
+}
 
 /* Split */
 .showcase__split {
@@ -19,13 +23,15 @@
   object-position: center;
   transition: transform var(--t-slower);
 }
-.showcase__photo-col:hover .showcase__photo { transform: scale(1.05); }
+.showcase__photo-col:hover .showcase__photo {
+  transform: scale(1.05);
+}
 
 .showcase__photo-badge {
   position: absolute;
   bottom: 24px;
   left: 24px;
-  background: rgba(255,255,255,.9);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(8px);
   border-radius: var(--r-xl);
   padding: 12px 20px;
@@ -34,7 +40,9 @@
   gap: 12px;
 }
 
-.showcase__photo-badge-icon { color: var(--c-brand); }
+.showcase__photo-badge-icon {
+  color: var(--c-brand);
+}
 
 .showcase__photo-badge-text {
   font-weight: 700;
@@ -58,10 +66,12 @@
   line-height: 1.2;
 }
 
-.showcase__stats-title-accent { color: var(--c-cream); }
+.showcase__stats-title-accent {
+  color: var(--c-cream);
+}
 
 .showcase__stats-text {
-  color: rgba(255,255,255,.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: var(--fs-lg);
   line-height: 1.7;
   margin-bottom: 32px;
@@ -77,7 +87,7 @@
 }
 
 .stat-card {
-  background: rgba(255,255,255,.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: var(--r-lg);
   padding: 16px;
 }
@@ -90,7 +100,7 @@
 
 .stat-card__label {
   font-size: var(--fs-sm);
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Work section */
@@ -129,7 +139,9 @@
   box-shadow: var(--shadow-sm);
   transition: box-shadow var(--t-slow);
 }
-.work-card:hover { box-shadow: var(--shadow-xl); }
+.work-card:hover {
+  box-shadow: var(--shadow-xl);
+}
 
 .work-card__img-wrap {
   position: relative;
@@ -143,13 +155,15 @@
   object-fit: cover;
   transition: transform var(--t-slower);
 }
-.work-card:hover .work-card__img { transform: scale(1.05); }
+.work-card:hover .work-card__img {
+  transform: scale(1.05);
+}
 
 .work-card__tag {
   position: absolute;
   top: 16px;
   left: 16px;
-  background: rgba(255,255,255,.9);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(8px);
   border-radius: var(--r-full);
   padding: 6px 12px;
@@ -158,7 +172,9 @@
   color: var(--c-brand);
 }
 
-.work-card__body { padding: 28px; }
+.work-card__body {
+  padding: 28px;
+}
 
 .work-card__title {
   font-size: var(--fs-xl);
@@ -189,7 +205,12 @@
 .showcase__cta-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.5), rgba(0,0,0,.2));
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 
 .showcase__cta-content {
@@ -205,7 +226,7 @@
 }
 
 .showcase__cta-pretitle {
-  color: rgba(255,255,255,.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: var(--fs-lg);
   margin-bottom: 12px;
 }
@@ -227,14 +248,32 @@
 }
 
 @media (min-width: 768px) {
-  .showcase__banner-title    { font-size: var(--fs-7xl); }
-  .showcase__banner-inner    { padding-left: 48px; max-width: none; }
-  .showcase__split           { grid-template-columns: 1fr 1fr; }
-  .showcase__stats-col       { padding: 64px; }
-  .showcase__stats-title     { font-size: var(--fs-5xl); }
-  .showcase__work-title      { font-size: var(--fs-5xl); }
-  .work-grid                 { grid-template-columns: repeat(3, 1fr); }
-  .showcase__cta-title       { font-size: var(--fs-5xl); }
-  .showcase__cta-actions     { flex-direction: row; }
+  .showcase__banner-title {
+    font-size: var(--fs-7xl);
+  }
+  .showcase__banner-inner {
+    padding-left: 48px;
+    max-width: none;
+  }
+  .showcase__split {
+    grid-template-columns: 1fr 1fr;
+  }
+  .showcase__stats-col {
+    padding: 64px;
+  }
+  .showcase__stats-title {
+    font-size: var(--fs-5xl);
+  }
+  .showcase__work-title {
+    font-size: var(--fs-5xl);
+  }
+  .work-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .showcase__cta-title {
+    font-size: var(--fs-5xl);
+  }
+  .showcase__cta-actions {
+    flex-direction: row;
+  }
 }
-

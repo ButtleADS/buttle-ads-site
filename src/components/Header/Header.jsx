@@ -1,24 +1,22 @@
 import "./header.css";
 import logo from "./../../images/Logo_ButtleADS.svg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScrolled = () => {
-    if(window.scrollY === 0) {
+    if (window.scrollY === 0) {
       setScrolled(false);
     } else {
       setScrolled(true);
     }
-  }
+  };
   return (
     <header
       className={
-        scrolled
-          ? "header header__bg-trasparent"
-          : "header header__bg-white"
+        scrolled ? "header header__bg-trasparent" : "header header__bg-white"
       }
     >
       <div className="header__container">
@@ -28,35 +26,41 @@ export const Header = () => {
             <img src={logo} alt="ButtleADS" className="header__logo-img" />
             <span className="header__logo-text">ButtleADS</span>
           </a>
-
+          {/* header__nav-link--active */}
           {/* Навігація — десктоп */}
           <nav className="header__nav">
-            <Link to="/"> </Link>
-            <Link to="/"> </Link>
-            <Link to="/"> </Link>
-            <Link to="/"> </Link>
-            <Link to="/"> </Link>
-            <a
-              href="/Home"
-              className="header__nav-link header__nav-link--active"
-            >
-              Головна
-            </a>
-            <a href="/Advertisers" className="header__nav-link">
-              Для рекламодавців
-            </a>
-            <a href="/QRLandings" className="header__nav-link">
-              QR Лендінги
-            </a>
-            <a href="/Contact" className="header__nav-link">
-              Контакти
-            </a>
-
-            <a href="/Contact" className="header__cta">
+            <NavLink to="/Home" className="header__nav-link">
+              {({ isActive }) => (
+                <span className={isActive ? "header__nav-link--active" : ""}>
+                  Головна
+                </span>
+              )}
+            </NavLink>
+            <NavLink to="/Advertisers" className="header__nav-link">
+              {({ isActive }) => (
+                <span className={isActive ? "header__nav-link--active" : ""}>
+                  Для рекламодавців
+                </span>
+              )}
+            </NavLink>
+            <NavLink to="/QRLandings" className="header__nav-link">
+              {({ isActive }) => (
+                <span className={isActive ? "header__nav-link--active" : ""}>
+                  QR Лендінги
+                </span>
+              )}
+            </NavLink>
+            <NavLink to="/Contact" className="header__nav-link">
+              {({ isActive }) => (
+                <span className={isActive ? "header__nav-link--active" : ""}>
+                  Контакти
+                </span>
+              )}
+            </NavLink>
+            <NavLink to="/Contact">
               <button className="header__cta-btn">Зв'язатися</button>
-            </a>
+            </NavLink>
           </nav>
-          
           {/* Бургер — мобільний */}
           <button className="header__burger">
             <svg
