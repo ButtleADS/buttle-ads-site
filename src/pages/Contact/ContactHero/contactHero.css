@@ -1,0 +1,34 @@
+
+.contact-hero {
+  padding: 128px 0 64px;
+  background: linear-gradient(to bottom right, rgba(230,220,211,.3), #fff);
+}
+
+.contact-hero__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+}
+
+.contact-hero__content {
+  text-align: center;
+  max-width: 672px; /* max-w-2xl */
+  margin: 0 auto;
+}
+
+.contact-hero__title {
+  font-size: var(--fs-4xl);
+  font-weight: 700;
+  color: var(--c-text);
+  margin: 16px 0 24px;
+  line-height: 1.2;
+}
+
+.contact-hero__subtitle {
+  color: var(--c-muted);
+  font-size: var(--fs-lg);
+}
+
+@media (min-width: 768px) {
+  .contact-hero__title { font-size: var(--fs-5xl); }
+}

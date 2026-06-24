@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home";
 import { Advertisers } from "./pages/Advertisers";
 import { QRLandings } from "./pages/QRLandings";
+import { Contact } from "./pages/Contact";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/Advertisers" element={<Advertisers />} />
         <Route path="/QRLandings" element={<QRLandings />} />
+        <Route path="/Contact" element={<Contact/>} />
       </Routes>
       <Footer />
     </>
