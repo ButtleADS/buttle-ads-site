@@ -10,17 +10,17 @@ import { Home } from "./pages/Home";
 import { Advertisers } from "./pages/Advertisers";
 import { QRLandings } from "./pages/QRLandings";
 import { Contact } from "./pages/Contact";
-import { HeaderHomePage } from "./components/HeaderHomePage/HeaderHomePage";
+// import { HeaderHomePage } from "./components/HeaderHomePage/HeaderHomePage";
 
 function App() {
   // const [count, setCount] = useState(0)
-  const location = useLocation();
-  const isHomePage = location.pathname === "/Home";
+  // const location = useLocation();
+  // const isHomePage = location.pathname === "/Home";
 
   return (
     <>
-      {isHomePage ? <HeaderHomePage /> : <Header />}
-
+      {/* {isHomePage ? <HeaderHomePage /> : <Header />} */}
+      <Header />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/Home" element={<Home />} />
