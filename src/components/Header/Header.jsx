@@ -3,6 +3,7 @@ import logo from "./../../images/Logo_ButtleADS.svg";
 
 import { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
+import { LanguageToggle } from "../../Toggle/LanguageToggle";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -90,6 +91,7 @@ export const Header = () => {
                 </button>
               )}
             </NavLink>
+            <LanguageToggle />
           </nav>
 
           {/* Бургер — мобільний */}
@@ -183,6 +185,7 @@ export const Header = () => {
                 </button>
               )}
             </NavLink>
+            <LanguageToggle />
           </nav>
         )}
       </div>
