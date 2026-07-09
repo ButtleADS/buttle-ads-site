@@ -3,10 +3,10 @@ import './processFlow.css';
 
 
 const flowSteps = [
-  { num: "1", text: "Людина бере пляшку безкоштовно" },
-  { num: "2", text: "Сканує QR-код на пляшці" },
-  { num: "3", text: "Потрапляє на ваш лендінг" },
-  { num: "4", text: "Залишає контакт або робить замовлення" },
+  { num: "1", text: "Osoba otrzymuje butelkę za darmo" },
+  { num: "2", text: "Skanuje kod QR na butelce" },
+  { num: "3", text: "Trafia na waszą stronę docelową" },
+  { num: "4", text: "Nawiązuje kontakt lub składa zamówienie" },
 ];
 
 export const ProcessFlow = () => {

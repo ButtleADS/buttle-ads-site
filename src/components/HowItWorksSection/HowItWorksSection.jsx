@@ -19,8 +19,8 @@ const steps = [
         <path d="m21 21-4.3-4.3" />
       </svg>
     ),
-    title: "Аналіз аудиторії",
-    text: "Визначаємо, де саме живе ваша цільова аудиторія — парки, бізнес-центри, спортивні заходи.",
+    title: "Analiza odbiorców",
+    text: "Określamy, gdzie dokładnie mieszka Twoja grupa docelowa — w parkach, centrach biznesowych, na imprezach sportowych.",
   },
   {
     num: "02",
@@ -43,8 +43,8 @@ const steps = [
         <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
       </svg>
     ),
-    title: "Підготовка кампанії",
-    text: "Розробляємо дизайн пляшок, QR-коди та міні-лендинг під вашу пропозицію.",
+    title: "Przygotowanie kampanii",
+    text: "Opracowujemy indywidualny projekt butelek, kody QR oraz mobilną stronę docelową dostosowaną do Twojej oferty.",
   },
   {
     num: "03",
@@ -64,8 +64,8 @@ const steps = [
         <circle cx="12" cy="10" r="3" />
       </svg>
     ),
-    title: "Таргетована роздача",
-    text: "Команда ButtleADS роздає пляшки у конкретних точках міста серед потрібних людей.",
+    title: "Ukierunkowana dystrybucja",
+    text: "Zespół Buttle ADS rozdaje butelki w konkretnych punktach miasta bezpośrednio Twoim potencjalnym klientom.",
   },
   {
     num: "04",
@@ -88,8 +88,8 @@ const steps = [
         <path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z" />
       </svg>
     ),
-    title: "Переходи через QR",
-    text: "Користувач сканує QR → потрапляє на ваш лендинг → залишає заявку або купує.",
+    title: "Przejścia przez kod QR ",
+    text: "Użytkownik skanuje kod QR  → trafia na Państwa stronę docelową → składa zapytanie lub dokonuje zakupu.",
   },
   {
     num: "05",
@@ -109,8 +109,8 @@ const steps = [
         <path d="m9 12 2 2 4-4" />
       </svg>
     ),
-    title: "Ліди і продажі",
-    text: "Ви отримуєте реальних зацікавлених клієнтів — не покази, а апруви.",
+    title: "Potencjalni klienci i sprzedaż ",
+    text: "Otrzymujesz rzeczywiste zapytania od zainteresowanych klientów — wymierny wynik, a nie puste wyświetlenia.",
   },
 ];
 
@@ -128,17 +128,17 @@ export const HowItWorksSection = () => {
               />
               <div className="how__image-badge">
                 <p className="how__badge-num">12%</p>
-                <p className="how__badge-text">середня конверсія QR → заявка</p>
+                <p className="how__badge-text">średnia konwersja QR → zgłoszenie</p>
               </div>
             </div>
           </div>
 
           <div className="how__content">
-            <span className="label label--brand">Як це працює</span>
+            <span className="label label--brand">Jak to działa</span>
             <h2 className="how__title">
-              5 кроків до
+              5 kroków do
               <br />
-              <span className="how__title-accent">реальних клієнтів</span>
+              <span className="how__title-accent">pozyskania prawdziwych klientów</span>
             </h2>
 
             <div className="steps">
@@ -158,7 +158,7 @@ export const HowItWorksSection = () => {
 
             <a href="/Advertisers" className="how__cta">
               <button className="btn btn--dark btn--lg">
-                Запустити кампанію
+                Uruchom kampanię
                 <svg
                   className="btn__icon"
                   xmlns="http://www.w3.org/2000/svg"

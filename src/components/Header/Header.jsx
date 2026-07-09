@@ -49,21 +49,28 @@ export const Header = () => {
             <NavLink to="/Home" className="header__nav-link">
               {({ isActive }) => (
                 <span className={isActive ? "header__nav-link--active" : ""}>
-                  Головна
+                  Główna
+                </span>
+              )}
+            </NavLink>
+            <NavLink to="/Advertisers " className="header__nav-link">
+              {({ isActive }) => (
+                <span className={isActive ? "header__nav-link--active" : ""}>
+                  Dla reklamodawców
                 </span>
               )}
             </NavLink>
             <NavLink to="/QRLandings" className="header__nav-link">
               {({ isActive }) => (
                 <span className={isActive ? "header__nav-link--active" : ""}>
-                  QR Лендінги
+                  QR Landingi
                 </span>
               )}
             </NavLink>
             <NavLink to="/Contact" className="header__nav-link">
               {({ isActive }) => (
                 <span className={isActive ? "header__nav-link--active" : ""}>
-                  Контакти
+                  Kontakt
                 </span>
               )}
             </NavLink>
@@ -76,7 +83,7 @@ export const Header = () => {
                       : "btn btn--ghost-light btn--md"
                   }
                 >
-                  Зв'язатися
+                  Skontaktuj się
                 </button>
               ) : (
                 <button
@@ -87,11 +94,11 @@ export const Header = () => {
                   }
                 >
                   {" "}
-                  Зв'язатися
+                  Skontaktuj się
                 </button>
               )}
             </NavLink>
-            <LanguageToggle />
+            {/* <LanguageToggle /> */}
           </nav>
 
           {/* Бургер — мобільний */}
@@ -145,21 +152,28 @@ export const Header = () => {
               className="header__mobile-nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
-              Головна
+              Główna
+            </NavLink>
+            <NavLink
+              to="/Home"
+              className="header__mobile-nav-link"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Dla reklamodawców
             </NavLink>
             <NavLink
               to="/QRLandings"
               className="header__mobile-nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
-              QR Лендінги
+              QR Landingi
             </NavLink>
             <NavLink
               to="/Contact"
               className="header__mobile-nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
-              Контакти
+              Kontakt
             </NavLink>
             <NavLink to="/Contact" onClick={() => setIsMenuOpen(false)}>
               {isHomePage ? (
@@ -170,7 +184,7 @@ export const Header = () => {
                       : "btn btn--ghost-light btn--md"
                   }
                 >
-                  Зв'язатися
+                  Skontaktuj się
                 </button>
               ) : (
                 <button
@@ -181,11 +195,11 @@ export const Header = () => {
                   }
                 >
                   {" "}
-                  Зв'язатися
+                  Skontaktuj się
                 </button>
               )}
             </NavLink>
-            <LanguageToggle />
+            {/* <LanguageToggle /> */}
           </nav>
         )}
       </div>

@@ -1,0 +1,178 @@
+.beauty-landing {
+  min-height: 100%;
+  background: #fff;
+  font-family: inherit;
+}
+
+.beauty-landing__hero {
+  position: relative;
+  height: 192px;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("./beauty.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.beauty-landing__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.6), transparent);
+}
+
+.beauty-landing__hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 16px;
+}
+
+.beauty-landing__hero-eyebrow {
+  color: #f9a8d4; /* pink-300 */
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 4px;
+}
+
+.beauty-landing__hero-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.beauty-landing__hero-sub {
+  color: rgba(255,255,255,.8);
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.beauty-landing__promo {
+  background: linear-gradient(to right, #ec4899, #fb7185); /* pink-500 → rose-400 */
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.beauty-landing__promo-title { font-weight: 700; font-size: 13px; }
+.beauty-landing__promo-sub   { font-size: 11px; color: #fce7f3; margin-top: 2px; }
+
+.beauty-landing__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 12px 0;
+  background: #fff1f2; /* rose-50 */
+}
+
+.beauty-landing__star {
+  width: 16px;
+  height: 16px;
+  color: #f472b6; /* pink-400 */
+}
+
+.beauty-landing__rating-text {
+  font-size: 11px;
+  color: #475569;
+  margin-left: 4px;
+}
+
+.beauty-landing__description {
+  padding: 16px;
+}
+.beauty-landing__description p {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.beauty-landing__services { padding: 0 16px 16px; }
+
+.beauty-landing__services-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 12px;
+}
+
+.beauty-landing__services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.beauty-service-card {
+  background: #fff1f2; /* rose-50 */
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.beauty-service-card__emoji { font-size: 24px; margin-bottom: 4px; }
+.beauty-service-card__name  { font-size: 11px; font-weight: 600; color: #1e293b; }
+.beauty-service-card__price { font-size: 11px; color: #ec4899; margin-top: 2px; }
+
+.beauty-landing__info {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.beauty-landing__info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.beauty-landing__info-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: #f472b6; /* pink-400 */
+}
+
+.beauty-landing__actions {
+  padding: 0 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.beauty-landing__btn-primary {
+  width: 100%;
+  background: #ec4899; /* pink-500 */
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 16px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background .15s ease;
+}
+.beauty-landing__btn-primary:hover { background: #db2777; }
+
+.beauty-landing__btn-icon { width: 16px; height: 16px; }
+
+.beauty-landing__btn-secondary {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  font-weight: 500;
+  padding: 12px 0;
+  border-radius: 16px;
+  font-size: 13px;
+  background: transparent;
+  cursor: pointer;
+}

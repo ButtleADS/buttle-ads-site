@@ -22,16 +22,16 @@ export const QrLandingsCta = () => {
             <path d="M12 18h.01" />
           </svg>
 
-          <h2 className="qr-cta__title">Готові запустити свій лендінг?</h2>
+          <h2 className="qr-cta__title">Chcesz uruchomić swoją stronę docelową?</h2>
 
           <p className="qr-cta__subtitle">
-            Ми розробимо персональний міні-лендінг та запустимо кампанію з
-            брендованими пляшками за 5–7 робочих днів.
+            Opracujemy spersonalizowaną mini-stronę landingową i uruchomimy kampanię z
+            butelkami z logo marki w ciągu 5–7 dni roboczych.
           </p>
 
           <a href="/Contact">
             <button className="btn btn--cream btn--lg">
-              Розпочати кампанію
+              Rozpocząć kampanię
             </button>
           </a>
 

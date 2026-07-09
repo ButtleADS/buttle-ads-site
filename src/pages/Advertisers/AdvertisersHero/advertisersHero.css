@@ -1,0 +1,44 @@
+/* ════════════════════════════════════════
+   ADVERTISERS HERO
+   ════════════════════════════════════════ */
+.advertisers-hero {
+  padding: 128px 0 64px;
+  background: linear-gradient(to bottom right, rgba(230,220,211,.3), #fff);
+}
+
+.advertisers-hero__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+  text-align: center;
+  max-width: 768px;
+}
+
+.advertisers-hero__title {
+  font-size: var(--fs-4xl);
+  font-weight: 700;
+  color: var(--c-text);
+  margin: 16px 0 24px;
+  line-height: 1.2;
+}
+
+.advertisers-hero__title-accent {
+  background: linear-gradient(to right, var(--c-brand), #6d5d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.advertisers-hero__subtitle {
+  color: var(--c-muted);
+  font-size: var(--fs-lg);
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .advertisers-hero__title { font-size: var(--fs-5xl); }
+}
+
+@media (min-width: 1024px) {
+  .advertisers-hero__title { font-size: var(--fs-6xl, 60px); }
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButtleADS — Для рекламодавців</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body class="about-page">
+
+    <div class="light-header-wrapper">
+
+
+        <section class="about-hero">
+            <div class="about-hero-container">
+                <p class="gold-label">ДЛЯ РЕКЛАМОДАВЦІВ</p>
+                <h1 class="main-title">Реклама, яка <span>працює</span></h1>
+                <p class="description">
+                    Поставте ваш бренд буквально в руки тисячам потенційних клієнтів.
+                    Органічний контакт, позитивні емоції, запам'ятовуваність.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="locations-section">
+        <div class="container-map">
+            <div class="locations-header">
+                <h2>Доступні локації</h2>
+                <p class="sub-description">Оберіть оптимальні точки для вашої рекламної кампанії. Клікайте на маркери
+                    для детальної інформації.</p>
+            </div>
+
+            <div class="filters-card">
+                <div class="filters-header">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                    </svg>
+                    <span>Фільтри локацій</span>
+                </div>
+                <div class="filters-grid">
+                    <div class="filter-item">
+                        <label>Категорія</label>
+                        <select>
+                            <option>Всі категорії</option>
+                            <option>Кав'ярні</option>
+                            <option>Бізнес-центри</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label>Тип аудиторії</label>
+                        <select>
+                            <option>Вся аудиторія</option>
+                            <option>Студенти</option>
+                            <option>Бізнес</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label>Доступність</label>
+                        <select>
+                            <option>Всі</option>
+                            <option>Доступно зараз</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="map"></div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-val">10</div>
+                    <div class="stat-lab">Активних локацій</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val">187 000</div>
+                    <div class="stat-lab">Людей щодня</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val">9</div>
+                    <div class="stat-lab">Доступно зараз</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="report-section">
+        <div class="container">
+            <div class="report-card">
+                <h2 class="report-title">Звіт по локаціях</h2>
+
+                <div class="report-table-wrapper">
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Локація</th>
+                                <th>Категорія</th>
+                                <th>Кампаній</th>
+                                <th>Роздано</th>
+                                <th>QR-скани</th>
+                                <th>Переходи</th>
+                                <th>Конверсії</th>
+                                <th>CTR</th>
+                                <th>CR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Невідома локація</td>
+                                <td><span class="cat-badge">-</span></td>
+                                <td>2</td>
+                                <td>1 650</td>
+                                <td>700</td>
+                                <td>580</td>
+                                <td>67</td>
+                                <td class="trend-up">↗ 42.4%</td>
+                                <td class="trend-up">↗ 11.6%</td>
+                            </tr>
+                            <tr>
+                                <td>Невідома локація</td>
+                                <td><span class="cat-badge">-</span></td>
+                                <td>2</td>
+                                <td>10 200</td>
+                                <td>2 480</td>
+                                <td>1 840</td>
+                                <td>200</td>
+                                <td class="trend-up">↗ 24.3%</td>
+                                <td class="trend-up">↗ 10.9%</td>
+                            </tr>
+                            <tr>
+                                <td>Невідома локація</td>
+                                <td><span class="cat-badge">-</span></td>
+                                <td>2</td>
+                                <td>3 100</td>
+                                <td>1 080</td>
+                                <td>850</td>
+                                <td>80</td>
+                                <td class="trend-up">↗ 34.8%</td>
+                                <td class="trend-up">↗ 9.4%</td>
+                            </tr>
+                            <tr>
+                                <td>Невідома локація</td>
+                                <td><span class="cat-badge">-</span></td>
+                                <td>2</td>
+                                <td>8 200</td>
+                                <td>1 900</td>
+                                <td>1 400</td>
+                                <td>137</td>
+                                <td class="trend-up">↗ 23.2%</td>
+                                <td class="trend-up">↗ 9.8%</td>
+                            </tr>
+                            <tr>
+                                <td>Невідома локація</td>
+                                <td><span class="cat-badge">-</span></td>
+                                <td>1</td>
+                                <td>1 400</td>
+                                <td>450</td>
+                                <td>340</td>
+                                <td>28</td>
+                                <td class="trend-up">↗ 32.1%</td>
+                                <td class="trend-up">↗ 8.2%</td>
+                            </tr>
+                            <tr>
+                                <td>Невідома локація</td>
+                                <td><span class="cat-badge">-</span></td>
+                                <td>3</td>
+                                <td>8 300</td>
+                                <td>2 250</td>
+                                <td>1 710</td>
+                                <td>155</td>
+                                <td class="trend-up">↗ 27.1%</td>
+                                <td class="trend-up">↗ 9.1%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="export-section">
+        <div class="container">
+            <div class="export-card">
+                <div class="export-info">
+                    <div class="export-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.5 2H6C5.17157 2 4.5 2.67157 4.5 3.5V20.5C4.5 21.3284 5.17157 22 6 22H18C18.8284 22 19.5 21.3284 19.5 20.5V7L14.5 2Z"
+                                fill="#8B7355" stroke="#8B7355" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M14.5 2V7H19.5" stroke="#FAF7F4" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M16 13H8" stroke="#FAF7F4" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M16 17H8" stroke="#FAF7F4" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10 9H8" stroke="#FAF7F4" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="export-text">
+                        <h3>Експорт звітів</h3>
+                        <p>Завантажте детальні звіти у зручному форматі</p>
+                    </div>
+                </div>
+
+                <div class="export-actions">
+                    <a href="#" class="btn-export btn-csv">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Експорт у CSV
+                    </a>
+                    <a href="#" class="btn-export btn-pdf">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Експорт у PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages-section">
+        <div class="container">
+            <div class="advantages-header">
+                <h2>Ваші переваги</h2>
+                <p>Все, що потрібно для успішної рекламної кампанії</p>
+            </div>
+
+            <div class="advantages-grid">
+                <div class="adv-card">
+                    <div class="adv-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                        </svg>
+                    </div>
+                    <h3>Повна кастомізація</h3>
+                    <p>Унікальний дизайн пляшки з вашим брендингом, QR-кодами та промо-матеріалами</p>
+                </div>
+
+                <div class="adv-card">
+                    <div class="adv-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Вибір локацій</h3>
+                    <p>Оберіть точки роздачі відповідно до вашої цільової аудиторії</p>
+                </div>
+
+                <div class="adv-card">
+                    <div class="adv-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3>Детальна аналітика</h3>
+                    <p>Звіти про кількість роздач, географію та взаємодію з QR-кодами</p>
+                </div>
+
+                <div class="adv-card">
+                    <div class="adv-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Гнучкий графік</h3>
+                    <p>Плануйте кампанії на події, сезони чи постійну присутність</p>
+                </div>
+
+                <div class="adv-card">
+                    <div class="adv-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Преміальна якість</h3>
+                    <p>Тільки сертифікована вода та екологічні матеріали пляшок</p>
+                </div>
+
+                <div class="adv-card">
+                    <div class="adv-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B7355" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Швидкий запуск</h3>
+                    <p>Від ідеї до роздачі за 5-7 робочих днів</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-header">
+                <h2>Пакети співпраці</h2>
+                <p>Оберіть оптимальний варіант для вашого бізнесу</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-content">
+                        <h3 class="plan-name">Starter</h3>
+                        <p class="plan-desc">Ідеально для тестування</p>
+                        <div class="plan-value">
+                            <span class="number">5,000</span>
+                            <span class="unit">пляшок</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Брендована етикетка</li>
+                            <li>1 локація на вибір</li>
+                            <li>Базовий звіт</li>
+                            <li>Підтримка менеджера</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-price-outline">Замовити консультацію</a>
+                </div>
+
+                <div class="price-card featured">
+                    <div class="badge-featured">Рекомендовано</div>
+                    <div class="price-content">
+                        <h3 class="plan-name">Business</h3>
+                        <p class="plan-desc">Найпопулярніший вибір</p>
+                        <div class="plan-value">
+                            <span class="number">20,000</span>
+                            <span class="unit">пляшок</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Повний дизайн пляшки</li>
+                            <li>До 5 локацій</li>
+                            <li>Детальна аналітика</li>
+                            <li>QR-код інтеграція</li>
+                            <li>Фото/відео звіти</li>
+                            <li>Пріоритетна підтримка</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-price-fill">Замовити консультацію</a>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-content">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-desc">Максимальний охват</p>
+                        <div class="plan-value">
+                            <span class="number">50,000+</span>
+                            <span class="unit">пляшок</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Ексклюзивний дизайн</li>
+                            <li>Необмежені локації</li>
+                            <li>Реалтайм дашборд</li>
+                            <li>Інтеграція з CRM</li>
+                            <li>Персональний менеджер</li>
+                            <li>Спеціальні події</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-price-outline">Замовити консультацію</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions-cta">
+        <div class="container">
+            <div class="questions-cta-wrapper">
+                <h2>Маєте питання?</h2>
+                <p>Наша команда готова відповісти на всі ваші запитання та допомогти обрати оптимальне рішення для
+                    вашого бізнесу</p>
+                <a href="#" class="btn-cta-main">
+                    Зв'язатися з нами
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16663 10H15.8333" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M10.8333 5L15.8333 10L10.8333 15" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container container--footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="img/ButtleADS.svg" alt="Logo">
+                        <span class="logo-text">ButtleADS</span>
+                    </div>
+                    <p class="footer-about">
+                        Інноваційна рекламна платформа, яка поєднує користь для людей з ефективністю для брендів.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h3>Навігація</h3>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Для рекламодавців</a></li>
+                        <li><a href="#">Дизайнер</a></li>
+                        <li><a href="#">3D Тур</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contacts">
+                    <h3>Контакти</h3>
+                    <ul>
+                        <li><a href="mailto:hello@buttleads.com">hello@buttleads.com</a></li>
+                        <li><a href="tel:+380501234567">+38 (050) 123-45-67</a></li>
+                        <li>Київ, Україна</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 ButtleADS. Всі права захищені.</p>
+                <div class="footer-legal">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('header nav');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+
+        var map = L.map('map', {
+            scrollWheelZoom: false,
+            zoomControl: true
+        }).setView([50.4501, 30.5234], 12);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        function createIcon(color) {
+            return new L.Icon({
+                iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`,
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+        }
+
+        const iconBlue = createIcon('blue');
+        const iconGreen = createIcon('green');
+        const iconOrange = createIcon('orange');
+        const iconRed = createIcon('red');
+        const iconViolet = createIcon('violet');
+        const iconGraphite = createIcon('graphite');
+
+        const locations = [
+            { pos: [50.4501, 30.5234], name: "Центр", icon: iconBlue },
+            { pos: [50.4620, 30.5120], name: "Поділ (Кав'ярня)", icon: iconGreen },
+            { pos: [50.4350, 30.5450], name: "Печерськ (БЦ)", icon: iconOrange },
+            { pos: [50.4480, 30.5050], name: "Університет", icon: iconRed },
+            { pos: [50.4750, 30.5000], name: "Оболонь", icon: iconViolet },
+            { pos: [50.4200, 30.5200], name: "Либідська", icon: iconGraphite }
+        ];
+
+        locations.forEach(loc => {
+            L.marker(loc.pos, { icon: loc.icon }).addTo(map).bindPopup(`<b>${loc.name}</b><br>Активна точка`);
+        });
+    </script>
+</body>
+
+</html>

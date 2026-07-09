@@ -1,10 +1,26 @@
-import './resaultSection.css';
+import "./resaultSection.css";
 
 const results = [
-  { emoji: "🤝", title: "Живий контакт",  sub: "з реальною аудиторією" },
-  { emoji: "🎯", title: "Зацікавлені",    sub: "клієнти, а не покази" },
-  { emoji: "📋", title: "Ліди і апруви",  sub: "конкретні заявки" },
-  { emoji: "📈", title: "Продажі",        sub: "реклама, що продає" },
+  {
+    emoji: "🤝",
+    title: "Bezpośredni kontakt",
+    sub: "Gwarantowana interakcja z marką w realnym świecie.",
+  },
+  {
+    emoji: "🎯",
+    title: "Ukierunkowany zasięg",
+    sub: "Tylko Twoja aktywna grupa docelowa zamiast pustych wyświetleń.",
+  },
+  {
+    emoji: "📋",
+    title: "Precyzyjna analityka",
+    sub: "Przejrzyste śledzenie każdego zgłoszenia za pomocą unikalnego kodu QR.",
+  },
+  {
+    emoji: "📈",
+    title: "Zwrot z inwestycji",
+    sub: "Nowy, skuteczny kanał sprzedaży o wysokiej konwersji.",
+  },
 ];
 
 export const ResultsSection = () => {
@@ -12,8 +28,8 @@ export const ResultsSection = () => {
     <section className="results">
       <div className="results__container">
         <div className="results__header">
-          <span className="label label--brand">Результат</span>
-          <h2 className="results__title">Що отримує клієнт</h2>
+          <span className="label label--brand">Rezultat</span>
+          <h2 className="results__title">Co zyskuje Twoja firma</h2>
         </div>
         <div className="results__grid">
           {results.map((r) => (

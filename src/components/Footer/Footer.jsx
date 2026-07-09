@@ -2,17 +2,17 @@ import './footer.css';
 import logo from './../../images/Logo_ButtleADS.svg';
 
 const navLinks = [
-  { href: "/Home",        label: "Головна" },
-  { href: "/Advertisers", label: "Для рекламодавців" },
-  { href: "/Designer",    label: "Дизайнер" },
-  { href: "/QRLandings",  label: "QR Лендінги" },
-  { href: "/Contact",     label: "Контакти" },
+  { href: "/Home",        label: "Główna" },
+  { href: "/Advertisers", label: "Dla reklamodawców" },
+  // { href: "/Designer",    label: "Дизайнер" },
+  { href: "/QRLandings",  label: "QR Landingi" },
+  { href: "/Contact",     label: "Kontakt" },
 ];
 
 const contacts = [
   "hello@buttleads.com",
-  "+38 (050) 123-45-67",
-  "Київ, Україна",
+  "+48 513 616 311",
+  "Warszawa, Polska",
 ];
 
 export const Footer = () => {
@@ -31,12 +31,12 @@ export const Footer = () => {
               <span className="footer__brand-name">ButtleADS</span>
             </div>
             <p className="footer__about-text">
-              Інноваційна рекламна платформа, яка поєднує користь для людей з ефективністю для брендів.
+              Pierwsza platforma marketingu fizycznego, która przekształca zasięg w rzeczywiste leady i sprzedaż
             </p>
           </div>
 
           <div className="footer__col">
-            <h4 className="footer__col-title">Навігація</h4>
+            <h4 className="footer__col-title">Nawigacja</h4>
             <ul className="footer__list">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -47,7 +47,7 @@ export const Footer = () => {
           </div>
 
           <div className="footer__col">
-            <h4 className="footer__col-title">Контакти</h4>
+            <h4 className="footer__col-title">Kontakt</h4>
             <ul className="footer__list footer__list--muted">
               {contacts.map((c) => <li key={c}>{c}</li>)}
             </ul>
@@ -56,10 +56,11 @@ export const Footer = () => {
         </div>
 
         <div className="footer__bottom">
-          <p className="footer__copyright">© 2026 ButtleADS. Всі права захищені.</p>
+          <p className="footer__copyright">© 2026 ButtleADS. Wszelkie prawa zastrzeżone.</p>
           <div className="footer__legal">
-            <a href="#" className="footer__legal-link">Політика конфіденційності</a>
-            <a href="#" className="footer__legal-link">Умови використання</a>
+            <span className="footer__legal-link">Polityka prywatności</span>
+            <span href="#" className="footer__legal-link">Warunki użytkowania</span> 
+            {/* потім зробити готові посилання */}
           </div>
         </div>
       </div>

@@ -1,22 +1,26 @@
 import { useState } from "react";
 import './landingExamplesSection.css';
 import { ERestourant } from "./_examples/ERestaurant/ERestaurant";
+import { EBeauty } from "./_examples/EBeauty/EBeauty";
+import { EAuto } from "./_examples/EAuto/EAuto";
+import { EConstruction } from "./_examples/EConstruction/EConstruction";
 
 const categories = [
-  { id: "restaurant", emoji: "🍽️", label: "Ресторан" },
-  { id: "beauty",     emoji: "💅", label: "Салон краси" },
-  { id: "auto",       emoji: "🚗", label: "Авто салон" },
-  { id: "construction", emoji: "🏗️", label: "Будівництво" },
-  { id: "fitness",    emoji: "💪", label: "Фітнес" },
+  { id: "restaurant",   emoji: "🍽️", label: "Restauracja" },
+  { id: "beauty",       emoji: "💅", label: "Salon urody" },
+  { id: "auto",         emoji: "🚗", label: "Salon samochodowy" },
+  { id: "construction", emoji: "🏗️", label: "Budownictwo" },
+  // { id: "fitness",   emoji: "💪", label: "Fitness" },
 ];
 
 const features = [
-  "Унікальний дизайн під ваш бренд",
-  "Спеціальна пропозиція для власника пляшки",
-  "Форма захоплення контактів",
-  "Кнопка дзвінка / запису / замовлення",
-  "Аналітика переходів та конверсій",
+  "Unikalny design dopasowany do Twojej marki",
+  "Specjalna oferta dla posiadacza butelki",
+  "Formularz zbierania kontaktów",
+  "Przycisk połączenia / rezerwacji / zamówienia",
+  "Analityka wejść i konwersji",
 ];
+
 
 export const LandingExamplesSection = () => {
   const [activeCategory, setActiveCategory] = useState("restaurant");
@@ -26,9 +30,9 @@ export const LandingExamplesSection = () => {
       <div className="landing-examples__container">
 
         <div className="landing-examples__header">
-          <h2 className="landing-examples__title">Приклади лендінгів</h2>
+          <h2 className="landing-examples__title">Przykłady landing page’ów</h2>
           <p className="landing-examples__subtitle">
-            Оберіть тип бізнесу, щоб побачити як виглядатиме ваш міні-лендінг
+            Wybierz rodzaj działalności, aby zobaczyć, jak będzie wyglądać Twoja mini-strona docelowa
           </p>
         </div>
 
@@ -58,7 +62,13 @@ export const LandingExamplesSection = () => {
 
                   {activeCategory === "restaurant" && <ERestourant/>}
 
-                  {/* TODO: контент для beauty / auto / construction / fitness */}
+                  {activeCategory === "beauty" && <EBeauty/>}
+
+                  {activeCategory === "auto" && <EAuto />}
+
+                  {activeCategory === "construction" && <EConstruction />}
+
+                  {/* fitness */}
 
                 </div>
               </div>
@@ -69,14 +79,14 @@ export const LandingExamplesSection = () => {
           {/* Список фіч праворуч */}
           <div className="landing-examples__info">
             <div className="landing-examples__info-header">
-              <span className="landing-examples__info-emoji">🍽️</span>
-              <h3 className="landing-examples__info-title">Ресторан</h3>
+              {/* <span className="landing-examples__info-emoji"></span> */}
+              <h3 className="landing-examples__info-title">Landing</h3>
             </div>
             <p className="landing-examples__info-text">
-              Ваш персональний лендінг містить усе необхідне: опис бізнесу,
-              спеціальна пропозиція для власника пляшки, контакти та кнопку дії.
-              Всі лендінги адаптовані під мобільний телефон та завантажуються
-              миттєво.
+              Twoja osobista strona docelowa zawiera wszystko, co niezbędne: opis działalności,
+              specjalną ofertę dla właściciela butelki, dane kontaktowe oraz przycisk działania.
+              Wszystkie strony docelowe są dostosowane do urządzeń mobilnych i ładują się
+              natychmiast.
             </p>
             <ul className="feature-list">
               {features.map((f) => (
@@ -90,7 +100,7 @@ export const LandingExamplesSection = () => {
             </ul>
             <a href="/Contact">
               <button className="btn btn--dark btn--md">
-                Замовити лендінг для мого бізнесу
+                Zamów stronę docelową dla mojej firmy
                 <svg className="btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
                 </svg>

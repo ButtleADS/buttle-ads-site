@@ -1,0 +1,33 @@
+
+----HOME
+
+afterhero1
+- Nagłówek sekcji: Marketing fizyczny generujący leady
+    - Podtytuł: Buttle ADS to pierwsza platforma medialna, która przekształca zwykłą dystrybucję wody w skuteczne narzędzie sprzedaży. Łączymy wysokiej jakości kontakt offline z konwersją cyfrową.
+    - Karta 1: Naturalna lojalność / Twój klient otrzymuje realną wartość w upalny dzień. Pozytywne emocje związane z ugaszeniem pragnienia automatycznie kojarzą się z Twoją marką.
+    - Karta 2: Hiperlokalne targetowanie / Dostarczamy wodę tam, gdzie skupia się właśnie Twoja grupa docelowa: centra biznesowe, centra IT, ekskluzywne kluby fitness czy zamknięte wydarzenia biznesowe.
+    - Karta 3: Cyfrowy kontakt / Każda butelka posiada unikalny kod QR, który prowadzi do Twojej mobilnej strony docelowej. Użytkownik skanuje kod i natychmiast dokonuje zakupu lub rejestruje się w usłudze.
+    - Karta 4: Przejrzysta analityka / Zapomnij o nieefektywnych billboardach. Zyskujesz nowy, mierzalny kanał pozyskiwania klientów z przejrzystą analityką każdego skanowania.
+
+afterhero2
+### 4. Blok „5 kroków do pozyskania prawdziwych klientów” (Z plecakiem na ławce)
+
+- Poprawki techniczne: W kroku 03 popraw błąd drukarski dotyczący marki ButtleADS ➡️ wpisz z odstępem `Buttle ADS`. W kroku 05 usuwamy slangowe słowo *„апруви”*.
+- Nowy tekst:
+    - Krok 01: Analiza odbiorców / Określamy, gdzie dokładnie mieszka Twoja grupa docelowa — w parkach, centrach biznesowych, na imprezach sportowych.
+    - Krok 02: Przygotowanie kampanii / Opracowujemy indywidualny projekt butelek, kody QR oraz mobilną stronę docelową dostosowaną do Twojej oferty.
+    - Krok 03: Ukierunkowana dystrybucja / Zespół Buttle ADS rozdaje butelki w konkretnych punktach miasta bezpośrednio Twoim potencjalnym klientom.
+    - Krok 04: Przejścia przez kod QR / Użytkownik skanuje kod QR ➡️ trafia na Państwa stronę docelową ➡️ składa zapytanie lub dokonuje zakupu.
+    - Krok 05: Potencjalni klienci i sprzedaż / Otrzymujesz rzeczywiste zapytania od zainteresowanych klientów — wymierny wynik, a nie puste wyświetlenia.
+Uruchom kampanię
+średnia konwersja QR → zgłoszenie
+Jak to działa
+
+PROBLEM
+- Nagłówek: Tradycyjne kanały marketingowe już się nie opłacają
+    - Baner 1: 📉 Aukcje Google i Meta są przegrzane. Koszt reklamy cyfrowej rośnie z miesiąca na miesiąc, pochłaniając Twoją marżę.
+    - Blok 2: 🚫 Całkowita ślepota na banery. Użytkownicy nauczyli się automatycznie ignorować reklamy na smartfonach i billboardach.
+    - Baner 3: 💸 Ciągły wzrost kosztu pozyskania klienta. Koszt pozyskania nowego klienta (CAC) rośnie, a skuteczność standardowych kreacji spada.
+    - Cytat na dole: „Buttle ADS wyprowadza Twoją markę z cyfrowego chaosu tam, gdzie nie ma konkurencji — prosto w ręce Twojego klienta”.
+    - Plakietka na zdjęciu (u góry): Marketing efektywnościowy nowej generacji
+    - Plakat na zdjęciu (u dołu): Fizyczny kanał pozyskiwania klientów. Reklama offline, która działa jak Facebook online.

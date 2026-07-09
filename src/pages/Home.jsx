@@ -5,7 +5,7 @@ import { HowItWorksSection } from "./../components/HowItWorksSection/HowItWorksS
 import { ProblemSection } from "./../components/ProblemSection/ProblemSection";
 import { ResultsSection } from "./../components/ResaultSection/ResaultSection";
 import { ShowcaseSection } from "./../components/ShowcaseSection/ShowcaseSection";
-import { StatsBanner } from "./../components/StatsBanner/StatsBanner";
+// import { StatsBanner } from "./../components/StatsBanner/StatsBanner";
 import { FinalCtaSection } from "./../components/FinalCtaSection/FinalCtaSection";
 
 export const Home = () => {
@@ -19,7 +19,7 @@ export const Home = () => {
           <ProblemSection />
           <ResultsSection />
           <ShowcaseSection />
-          <StatsBanner />
+          {/* <StatsBanner /> це сторінка зі статистикою*/}
           <FinalCtaSection />
         </div>
       </main>

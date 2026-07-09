@@ -9,33 +9,33 @@ import showCase1 from "./../../images/showcaseSection/showCase1.png";
 import showCase2 from "./../../images/showcaseSection/showCase2.png";
 
 const stats = [
-  { value: "50K+", label: "Охоплення" },
-  { value: "25+", label: "Локацій" },
-  { value: "8K+", label: "QR-сканів" },
-  { value: "12%", label: "Конверсій" },
+  { value: "50K+", label: "Butelki to dla nas żaden problem" },
+  { value: "25+", label: "Dostępnych lokalizacji w Warszawie" },
+  { value: "100%", label: "Wyłączność marki na partii" },
+  { value: "12%", label: "Prognozowana konwersja na lead" },
 ];
 
 const workCards = [
   {
     img: workCard1,
-    alt: "QR-код на кожній пляшці",
-    tag: "Технологія",
-    title: "QR-код на кожній пляшці",
-    text: "Кожна роздача — це клік. Пряме посилання на ваш сайт, акцію або соцмережу.",
+    alt: "Kod QR na każdej butelce",
+    tag: "Technologia",
+    title: "Kod QR na każdej butelce",
+    text: "Każda rozdana butelka stanowi bezpośredni punkt wejścia na Twoją stronę internetową, do mediów społecznościowych lub na mobilną stronę docelową z Twoją unikalną ofertą.",
   },
   {
     img: workCard2,
-    alt: "Корпоративні заходи",
-    tag: "Преміум",
-    title: "Корпоративні заходи",
-    text: "Присутність бренду на бізнес-подіях, конференціях та корпоративних вечорах.",
+    alt: "Wydarzenia biznesowe i korporacyjne",
+    tag: "Premium",
+    title: "Wydarzenia biznesowe i korporacyjne",
+    text: "Bezpośrednia obecność Twojej marki na zamkniętych wydarzeniach biznesowych, dużych konferencjach IT, forach oraz ekskluzywnych wieczorach korporacyjnych.",
   },
   {
     img: workCard3,
-    alt: "Спорт та рух",
-    tag: "Активність",
-    title: "Спорт та рух",
-    text: "Бігуни, велосипедисти, відвідувачі фітнес-клубів — найбільш активна аудиторія.",
+    alt: "Sport i aktywny wypoczynek",
+    tag: "Aktywność",
+    title: "Sport i aktywny wypoczynek",
+    text: "Biegacze, rowerzyści, bywalcy klubów fitness i stref rekreacyjnych — to najbardziej aktywna grupa odbiorców, która najbardziej potrzebuje wody i jest otwarta na nowe marki.",
   },
 ];
 
@@ -51,7 +51,7 @@ export const ShowcaseSection = () => {
             alt="Street distribution"
             className="showcase__photo"
           />
-          <div className="showcase__photo-badge">
+          {/* <div className="showcase__photo-badge">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -70,28 +70,31 @@ export const ShowcaseSection = () => {
               <path d="M16 3.13a4 4 0 0 1 0 7.75" />
             </svg>
             <span className="showcase__photo-badge-text">
-              50,000+ контактів/місяць
+              50,000+ kontaktów/miesiąc
             </span>
-          </div>
+          </div> */}
         </div>
 
         <div className="showcase__stats-col">
           <div className="showcase__sec">
-            <span className="label label--brand">Масштаб</span>
+            <span className="label label--brand">Skala</span>
           </div>
           <div className="showcase__sec">
             <h3 className="showcase__stats-title">
-              Тисячі людей
+              Konkretne dane
               <br />
-              щодня тримають
+              dotyczące
               <br />
-              <span className="showcase__stats-title-accent">ваш бренд</span>
+              <span className="showcase__stats-title-accent">
+                Państwa przyszłej kampanii
+              </span>
             </h3>
           </div>
           <div className="showcase__sec">
             <p className="showcase__stats-text">
-              Ми роздаємо брендовану воду в найбільш людних місцях міста. Кожна
-              пляшка — це живий рекламний носій, який людина бере добровільно.
+              Zapewniamy systematyczną dystrybucję wody markowej w miejscach o
+              największym natężeniu ruchu pieszego w mieście. Każda kampania
+              podlega kompleksowej analizie i monitorowaniu.
             </p>
           </div>
 
@@ -110,7 +113,9 @@ export const ShowcaseSection = () => {
       <div className="showcase__work">
         <div className="showcase__work-container">
           <div className="showcase__work-header">
-            <h2 className="showcase__work-title">Де та як ми працюємо</h2>
+            <h2 className="showcase__work-title">
+              Gdzie i jak działa Twoja reklama
+            </h2>
           </div>
           <div className="work-grid">
             {workCards.map((card) => (
@@ -139,17 +144,17 @@ export const ShowcaseSection = () => {
         <div className="showcase__cta-overlay" />
         <div className="showcase__cta-content">
           <p className="showcase__cta-pretitle">
-            Готові запустити свою кампанію?
+            Gotowi na wielką premierę?
           </p>
           <h3 className="showcase__cta-title">
-            Ваш бренд заслуговує
+            Zamień przechodniów 
             <br />
-            на більше
+            w stałych klientów
           </h3>
           <div className="showcase__cta-actions">
             <a href="/Advertisers">
               <button className="btn btn--cream btn--lg">
-                Переглянути пакети
+                Zobacz pakiety 
                 <svg
                   className="btn__icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +174,7 @@ export const ShowcaseSection = () => {
             </a>
             <a href="/Contact">
               <button className="btn btn--ghost-light btn--lg">
-                Зв'язатися з нами
+                Skontaktuj się z nami
               </button>
             </a>
           </div>

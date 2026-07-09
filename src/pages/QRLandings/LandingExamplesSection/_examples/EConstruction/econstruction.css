@@ -1,0 +1,174 @@
+.construction-landing {
+  min-height: 100%;
+  background: #fff;
+  font-family: inherit;
+}
+
+.construction-landing__hero {
+  position: relative;
+  height: 192px;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("./build.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.construction-landing__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.7), transparent);
+}
+
+.construction-landing__hero-content {
+  position: relative;
+  z-index: 10;
+  padding: 16px;
+}
+
+.construction-landing__hero-eyebrow {
+  color: #fde047; /* yellow-300 */
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 4px;
+}
+
+.construction-landing__hero-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.construction-landing__hero-sub {
+  color: rgba(255,255,255,.8);
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.construction-landing__promo {
+  background: linear-gradient(to right, #eab308, #f97316); /* yellow-500 → orange-500 */
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.construction-landing__promo-title { font-weight: 700; font-size: 13px; }
+.construction-landing__promo-sub   { font-size: 11px; color: #fef9c3; margin-top: 2px; } /* yellow-100 */
+
+.construction-landing__stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background: #fffbeb; /* amber-50 */
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.construction-stat { text-align: center; }
+.construction-stat__value { font-weight: 700; font-size: 15px; color: #0f172a; }
+.construction-stat__label { font-size: 11px; color: #64748b; margin-top: 2px; }
+
+.construction-landing__description { padding: 16px; }
+.construction-landing__description p {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.construction-landing__works { padding: 0 16px 16px; }
+
+.construction-landing__works-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 12px;
+}
+
+.construction-landing__works-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.construction-work-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fffbeb; /* amber-50 */
+  border-radius: 12px;
+  padding: 8px 12px;
+}
+
+.construction-work-item__icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: #f97316; /* orange-500 */
+}
+
+.construction-work-item__text { font-size: 13px; color: #334155; }
+
+.construction-landing__info {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.construction-landing__info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.construction-landing__info-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: #f97316; /* orange-500 */
+}
+
+.construction-landing__actions {
+  padding: 0 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.construction-landing__btn-primary {
+  width: 100%;
+  background: #f97316; /* orange-500 */
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 16px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background .15s ease;
+}
+.construction-landing__btn-primary:hover { background: #ea580c; } /* orange-600 */
+
+.construction-landing__btn-icon { width: 16px; height: 16px; }
+
+.construction-landing__btn-secondary {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  font-weight: 500;
+  padding: 12px 0;
+  border-radius: 16px;
+  font-size: 13px;
+  background: transparent;
+  cursor: pointer;
+}
