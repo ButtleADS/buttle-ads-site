@@ -1,10 +1,10 @@
 import './statsBanner.css';
 
 const stats = [
-  { value: "50K+", label: "Пляшок на місяць" },
-  { value: "15+", label: "Локацій у місті" },
-  { value: "300K+", label: "Контактів з брендом" },
-  { value: "98%", label: "Задоволених партнерів" },
+  { value: "50K+", label: "Butelek miesięcznie" },
+  { value: "15+", label: "Miejsca w mieście" },
+  { value: "300K+", label: "Kontakty z marką" },
+  { value: "98%", label: "Zadowoleni partnerzy" },
 ];
 
 export const StatsBanner = () => {

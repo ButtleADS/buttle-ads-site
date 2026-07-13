@@ -1,0 +1,30 @@
+.warsaw-map-wrapper {
+  width: 100%;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid #e2e8f0;
+}
+
+.warsaw-map {
+  width: 100%;
+  height: 420px;
+}
+
+/* прибираємо синю рамку фокусу Leaflet, яка виглядає чужорідно на сайті */
+.leaflet-container:focus {
+  outline: none;
+}
+
+/* контроль zoom підганяємо під загальний стиль кнопок */
+.leaflet-control-zoom a {
+  border-radius: var(--r-sm) !important;
+  color: var(--c-text) !important;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 640px) {
+  .warsaw-map {
+    height: 320px;
+  }
+}

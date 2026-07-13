@@ -1,11 +1,10 @@
-import './qrLandingCta.css'; 
-
+import "./qrLandingCta.css";
+import { Link } from "react-router-dom";
 export const QrLandingsCta = () => {
   return (
     <section className="qr-cta">
       <div className="qr-cta__container">
         <div className="qr-cta__content">
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -22,19 +21,20 @@ export const QrLandingsCta = () => {
             <path d="M12 18h.01" />
           </svg>
 
-          <h2 className="qr-cta__title">Chcesz uruchomić swoją stronę docelową?</h2>
+          <h2 className="qr-cta__title">
+            Chcesz uruchomić swoją stronę docelową?
+          </h2>
 
           <p className="qr-cta__subtitle">
-            Opracujemy spersonalizowaną mini-stronę landingową i uruchomimy kampanię z
-            butelkami z logo marki w ciągu 5–7 dni roboczych.
+            Opracujemy spersonalizowaną mini-stronę landingową i uruchomimy
+            kampanię z butelkami z logo marki w ciągu 5–7 dni roboczych.
           </p>
 
-          <a href="/Contact">
+          <Link to="/Contact">
             <button className="btn btn--cream btn--lg">
               Rozpocząć kampanię
             </button>
-          </a>
-
+          </Link>
         </div>
       </div>
     </section>

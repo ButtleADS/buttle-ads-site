@@ -1,5 +1,7 @@
 import "./howItWorksSection.css";
 import howItWorks from "./../../images/howItWorks/how_it_works1.jpg";
+import {Link} from 'react-router-dom';
+
 const steps = [
   {
     num: "01",
@@ -128,7 +130,9 @@ export const HowItWorksSection = () => {
               />
               <div className="how__image-badge">
                 <p className="how__badge-num">12%</p>
-                <p className="how__badge-text">średnia konwersja QR → zgłoszenie</p>
+                <p className="how__badge-text">
+                  średnia konwersja QR → zgłoszenie
+                </p>
               </div>
             </div>
           </div>
@@ -138,7 +142,9 @@ export const HowItWorksSection = () => {
             <h2 className="how__title">
               5 kroków do
               <br />
-              <span className="how__title-accent">pozyskania prawdziwych klientów</span>
+              <span className="how__title-accent">
+                pozyskania prawdziwych klientów
+              </span>
             </h2>
 
             <div className="steps">
@@ -155,8 +161,7 @@ export const HowItWorksSection = () => {
                 </div>
               ))}
             </div>
-
-            <a href="/Advertisers" className="how__cta">
+            <Link to="/Advertisers" className="how__cta">
               <button className="btn btn--dark btn--lg">
                 Uruchom kampanię
                 <svg
@@ -175,7 +180,7 @@ export const HowItWorksSection = () => {
                   <path d="m12 5 7 7-7 7" />
                 </svg>
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

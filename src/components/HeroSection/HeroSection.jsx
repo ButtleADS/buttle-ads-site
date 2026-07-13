@@ -1,5 +1,5 @@
 import "./heroSection.css";
-
+import { Link } from "react-router-dom";
 export const HeroSection = () => {
   return (
     <section className="hero">
@@ -17,7 +17,7 @@ export const HeroSection = () => {
           gwarantujący tysiące spojrzeń każdego dnia.
         </p>
         <div className="hero__actions">
-          <a href="/Advertisers">
+          <Link to="/Advertisers">
             <button className="btn btn--cream btn--lg">
               Zostać partnerem
               <svg
@@ -36,12 +36,12 @@ export const HeroSection = () => {
                 <path d="m12 5 7 7-7 7" />
               </svg>
             </button>
-          </a>
-          <a href="/Contact">
+          </Link>
+          <Link to="/Contact">
             <button className="btn btn--ghost-light btn--lg">
               Skontaktuj się z nami
             </button>
-          </a>
+          </Link>
         </div>
       </div>
 

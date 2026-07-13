@@ -7,6 +7,7 @@ import workCard3 from "./../../images/showcaseSection/workCard3.png";
 
 import showCase1 from "./../../images/showcaseSection/showCase1.png";
 import showCase2 from "./../../images/showcaseSection/showCase2.png";
+import { Link } from "react-router-dom";
 
 const stats = [
   { value: "50K+", label: "Butelki to dla nas żaden problem" },
@@ -143,18 +144,15 @@ export const ShowcaseSection = () => {
         <img src={showCase2} alt="event" className="showcase__cta-bg" />
         <div className="showcase__cta-overlay" />
         <div className="showcase__cta-content">
-          <p className="showcase__cta-pretitle">
-            Gotowi na wielką premierę?
-          </p>
+          <p className="showcase__cta-pretitle">Gotowi na wielką premierę?</p>
           <h3 className="showcase__cta-title">
-            Zamień przechodniów 
-            <br />
-            w stałych klientów
+            Zamień przechodniów
+            <br />w stałych klientów
           </h3>
           <div className="showcase__cta-actions">
-            <a href="/Advertisers">
+            <Link to="/Advertisers">
               <button className="btn btn--cream btn--lg">
-                Zobacz pakiety 
+                Zobacz pakiety
                 <svg
                   className="btn__icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,12 +169,12 @@ export const ShowcaseSection = () => {
                   <path d="m12 5 7 7-7 7" />
                 </svg>
               </button>
-            </a>
-            <a href="/Contact">
+            </Link>
+            <Link to="/Contact">
               <button className="btn btn--ghost-light btn--lg">
                 Skontaktuj się z nami
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

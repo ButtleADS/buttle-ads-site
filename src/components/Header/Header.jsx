@@ -155,7 +155,7 @@ export const Header = () => {
               Główna
             </NavLink>
             <NavLink
-              to="/Home"
+              to="/Advertisers"
               className="header__mobile-nav-link"
               onClick={() => setIsMenuOpen(false)}
             >

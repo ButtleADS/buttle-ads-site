@@ -1,5 +1,6 @@
 import './footer.css';
 import logo from './../../images/Logo_ButtleADS.svg';
+import { Link } from 'react-router-dom';
 
 const navLinks = [
   { href: "/Home",        label: "Główna" },
@@ -40,7 +41,7 @@ export const Footer = () => {
             <ul className="footer__list">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a className="footer__link" href={link.href}>{link.label}</a>
+                  <Link to={link.href} className='footer__link'>{link.label}</Link>
                 </li>
               ))}
             </ul>
