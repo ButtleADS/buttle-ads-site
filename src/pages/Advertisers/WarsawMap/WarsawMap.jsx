@@ -2,7 +2,7 @@
 import { MapContainer, TileLayer, Circle, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import "./WarsawMap.css";
+import "./warsawMap.css";
 
 // Leaflet за замовчуванням шукає іконки маркера у неправильному шляху
 // при зборці через Vite/Webpack — фіксимо це один раз
