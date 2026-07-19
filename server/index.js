@@ -17,7 +17,7 @@ dotenv.config();
 const app = express();
 
 // Дозволяє серверу розуміти JSON, який надсилає React (fetch з body: JSON.stringify(...))
-app.use(express.json());
+app.use(express.json({ limit: "10kb" }));
 
 // CORS — без цього браузер заблокує запити з biconn.github.io на цей сервер,
 // бо це "інший домен" (Render, а не GitHub Pages)
@@ -53,14 +53,17 @@ async function verifyRecaptcha(token) {
     response: token,                          // token, який прийшов від React
   });
 
-  const response = await fetch("https://www.google.com/recaptcha/api/siteverify", {
-    method: "POST",
-    body: params,
-  });
-
-  const data = await response.json();
-  // data.success === true, якщо reCAPTCHA підтвердила що це людина
-  return data.success === true;
+    try {
+    const response = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+      method: "POST",
+      body: params,
+    });
+    const data = await response.json();
+    return data.success === true;
+  } catch (err) {
+    console.error("reCAPTCHA request failed:", err);
+    return false;
+  }
 }
 
 // ==========================================
@@ -97,7 +100,8 @@ app.post("/api/contact", async (req, res) => {
   try {
     await resend.emails.send({
       from: "ButtleADS Contact <onboarding@resend.dev>", // поки без свого домену
-      to: process.env.CONTACT_EMAIL_TO,                  // куди прийде лист (твоя пошта)
+      to: process.env.CONTACT_EMAIL_TO,
+      replyTo: email,                  // куди прийде лист (твоя пошта)
       subject: `Нова заявка від ${name}`,
       text: `
 Ім'я: ${name}

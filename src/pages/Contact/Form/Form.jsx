@@ -312,7 +312,7 @@ export const ContactForm = () => {
                   />
                 </div>
                 <div className="form-field">
-                  <ReCAPTCHA ref={recaptchaRef} sitekey="ТУТ_ТВІЙ_SITE_KEY" />
+                  <ReCAPTCHA ref={recaptchaRef} sitekey="6LcScVstAAAAAHw7rps_7-P_XXMzZaoX3RoQIleZ" />
                 </div>
                 <button
                   type="submit"
