@@ -110,6 +110,7 @@ export const ContactForm = () => {
   });
 
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  // const [captchaToken, setCaptchaToken] = useState(null);
 
   // ref на reCAPTCHA-віджет, щоб можна було зчитати token і скинути віджет після сабміту
   const recaptchaRef = useRef(null);
@@ -133,11 +134,14 @@ export const ContactForm = () => {
     setStatus("sending");
 
     try {
-      const response = await fetch("http://localhost:3000/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, recaptchaToken }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contact`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...formData, recaptchaToken }),
+        },
+      );
 
       const data = await response.json();
 
@@ -259,7 +263,7 @@ export const ContactForm = () => {
                     <input
                       className="form-field__input"
                       id="phone"
-                      placeholder="+48_123_456_789"
+                      placeholder="+48123456789"
                       value={formData.phone}
                       onChange={handleChange}
                     />
@@ -312,28 +316,28 @@ export const ContactForm = () => {
                   />
                 </div>
                 <div className="form-field">
-                  <ReCAPTCHA ref={recaptchaRef} sitekey="6LcScVstAAAAAHw7rps_7-P_XXMzZaoX3RoQIleZ" />
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                  />
                 </div>
+                {status === "success" && (
+                  <p className="contact-card__success">
+                    Dziękujemy! Odpowiemy w ciągu 24 godzin.
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="contact-card__error">
+                    Coś poszło nie tak. Spróbuj ponownie.
+                  </p>
+                )}
+
                 <button
                   type="submit"
                   className="btn btn--dark contact-card__submit"
+                  disabled={status === "sending"}
                 >
-                  Wyślij
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="btn__icon"
-                  >
-                    <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-                    <path d="m21.854 2.147-10.94 10.939" />
-                  </svg>
+                  {status === "sending" ? "Wysyłanie..." : "Wyślij"}
                 </button>
               </form>
             </div>

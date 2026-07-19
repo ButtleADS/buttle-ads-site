@@ -96,7 +96,7 @@ export const LandingExamplesSection = () => {
               ))}
             </ul>
             <Link to="/Contact">
-              <button className="btn btn--dark btn--md">
+              <button className="btn btn--dark btn--md btn--land-ex">
                 Zamów stronę docelową dla mojej firmy
                 <svg
                   className="btn__icon"

@@ -117,7 +117,7 @@
 
 
 /* Info column (праворуч) */
-.landing-examples__info { max-width: 448px; }
+.landing-examples__info { max-width: 350px; }
 
 .landing-examples__info-header {
   display: flex;
@@ -172,6 +172,30 @@
   height: 8px;
   border-radius: 50%;
   background: var(--c-brand);
+}
+
+.btn--land-ex {
+  /* дозволяємо перенос тексту — перебиваємо nowrap з базового .btn */
+  white-space: normal;
+  text-align: center;
+
+  /* фіксована висота ламає багаторядковий текст — переходимо на паддінги */
+  height: auto;
+  min-height: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /* кнопка не ширша за контейнер */
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .btn--land-ex {
+    width: 100%;         /* на мобільному займає всю ширину колонки */
+    font-size: var(--fs-sm);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 @media (min-width: 1024px) {
