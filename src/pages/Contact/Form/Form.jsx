@@ -135,7 +135,7 @@ export const ContactForm = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/contact`,
+        "/.netlify/functions/send-email",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
