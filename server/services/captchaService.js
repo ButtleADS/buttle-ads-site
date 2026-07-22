@@ -5,5 +5,7 @@ export const verifyCaptcha = async (token) => {
     body: `secret=${process.env.RECAPTCHA_SECRET}&response=${token}`,
   });
   const data = await res.json();
+  сonsole.log('recaptcha:', process.env.RECAPTCHA_SECRET)
   return data.success;
+
 };

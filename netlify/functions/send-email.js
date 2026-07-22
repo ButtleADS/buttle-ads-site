@@ -46,7 +46,7 @@ export default async (req) => {
   try {
     await resend.emails.send({
       from: "ButtleADS <onboarding@resend.dev>",
-      to: process.env.CONTACT_EMAIL_TO,
+      to: process.env.CONTACT_EMAIL_TO || 'hello@buttleads.com',
       replyTo: email,
       subject: `Nowe zapytanie: ${name}`,
       text: `Imię: ${name}
