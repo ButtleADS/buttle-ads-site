@@ -53,7 +53,7 @@ export const Header = () => {
                 </span>
               )}
             </NavLink>
-            <NavLink to="/Advertisers " className="header__nav-link">
+            <NavLink to="/Advertisers" className="header__nav-link">
               {({ isActive }) => (
                 <span className={isActive ? "header__nav-link--active" : ""}>
                   Dla reklamodawców

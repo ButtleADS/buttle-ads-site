@@ -3,7 +3,7 @@ import './processFlow.css';
 
 
 const flowSteps = [
-  { num: "1", text: "Osoba otrzymuje butelkę za darmo" },
+  { num: "1", text: "Osoba otrzymuje butelkę", super: "za darmo" },
   { num: "2", text: "Skanuje kod QR na butelce" },
   { num: "3", text: "Trafia na waszą stronę docelową" },
   { num: "4", text: "Nawiązuje kontakt lub składa zamówienie" },
@@ -18,7 +18,8 @@ export const ProcessFlow = () => {
             <Fragment key={step.num}>
               <div className="process-flow__item">
                 <div className="process-flow__num">{step.num}</div>
-                <span className="process-flow__text">{step.text}</span>
+                <span className="process-flow__text">{step.text}</span>{step.super && <span className="process-flow__super">{step.super}</span>}
+
               </div>
               {index < flowSteps.length - 1 && (
                 <div className="process-flow__arrow">→</div>

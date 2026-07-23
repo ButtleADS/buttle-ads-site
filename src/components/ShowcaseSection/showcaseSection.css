@@ -102,7 +102,11 @@
   font-size: var(--fs-sm);
   color: rgba(255, 255, 255, 0.5);
 }
-
+.stat-card__det {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.684);
+  letter-spacing: 1px;
+}
 /* Work section */
 .showcase__work {
   background: var(--c-cream-light);

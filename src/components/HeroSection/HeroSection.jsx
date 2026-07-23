@@ -8,18 +8,18 @@ export const HeroSection = () => {
 
       <div className="hero__content">
         <h1 className="hero__title">
-          Nowe medium, które gwarantuje 100% uwagi Twoich klientów
+          Światowy trend w Warszawie. Twoja marka – jedyna na butelce.
         </h1>
         <p className="hero__subtitle">
-          Innowacyjny format reklamy zewnętrznej w Warszawie. Dystrybuujemy wodę
-          premium Buttle ADS w najbardziej ruchliwych lokalizacjach miasta,
-          zamieniając każdą butelkę w Twój ekskluzywny nośnik reklamowy,
-          gwarantujący tysiące spojrzeń każdego dnia.
+          Na całym świecie tylko trzy firmy oferują ten format. Teraz jest on
+          dostępny w Polsce. Żadnych billboardów przypominających cmentarze z
+          dziesiątkami marek. Tylko Twój produkt, prezent dla klienta i 100%
+          uwagi bez konkurencji.
         </p>
         <div className="hero__actions">
           <Link to="/Advertisers">
             <button className="btn btn--cream btn--lg">
-              Zostać partnerem
+              Zarezerwuj swoją kampanię
               <svg
                 className="btn__icon"
                 xmlns="http://www.w3.org/2000/svg"

@@ -87,7 +87,9 @@ export const ProblemSection = () => {
 
             <div className="problem__quote">
               <p className="problem__quote-text">
-                Buttle ADS wyprowadza Twoją markę z cyfrowego chaosu tam, gdzie nie ma konkurencji — prosto w ręce Twojego klienta
+                A nawet jeśli ktoś zauważy wasz billboard — wasza reklama musi
+                dzielić uwagę odbiorców z pięcioma innymi konkurentami na tym
+                samym nośniku. Płacicie za to, by was ignorowano.
               </p>
             </div>
           </div>
@@ -102,7 +104,7 @@ export const ProblemSection = () => {
               <div className="problem__img-overlay" />
               <div className="problem__img-caption">
                 <p className="problem__img-caption-title">
-                  Fizyczny kanał pozyskiwania klientów. 
+                  Fizyczny kanał pozyskiwania klientów.
                 </p>
                 <p className="problem__img-caption-text">
                   Reklama offline, która działa jak Facebook online.
@@ -110,7 +112,9 @@ export const ProblemSection = () => {
               </div>
             </div>
             <div className="problem__badge">
-              <p className="problem__badge-title">Marketing efektywnościowy <br/> nowej generacji</p>
+              <p className="problem__badge-title">
+                Marketing efektywnościowy <br /> nowej generacji
+              </p>
               {/* <p className="problem__badge-sub">— ми приводимо клієнтів</p> */}
             </div>
           </div>

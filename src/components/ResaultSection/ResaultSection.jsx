@@ -8,8 +8,8 @@ const results = [
   },
   {
     emoji: "🎯",
-    title: "Ukierunkowany zasięg",
-    sub: "Tylko Twoja aktywna grupa docelowa zamiast pustych wyświetleń.",
+    title: "Czysty monopol",
+    sub: "Tylko Twoja marka, zero konkurencji o uwagę klienta",
   },
   {
     emoji: "📋",

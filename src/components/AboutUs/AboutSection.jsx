@@ -100,14 +100,17 @@ export const AboutSection = () => {
         <div className="about__header">
           <span className="label label--brand">kim jesteśmy</span>
           <h2 className="about__title">
-            Marketing fizyczny,
+            Nie sprzedajemy reklam.
             <br />
-            generujący leady
+            Tworzymy monopol na uwagę.
           </h2>
           <p className="about__subtitle">
-            Buttle ADS to pierwsza platforma medialna, która przekształca zwykłą
-            dystrybucję wody w skuteczne narzędzie sprzedaży. Łączymy wysokiej
-            jakości kontakt offline z konwersją cyfrową.
+            Na świecie istnieje zaledwie kilka firm dysponujących taką
+            technologią (USA, Niemcy, Indie). Teraz ButtleADS wprowadza ją w
+            Warszawie. Zamieniamy zwykłą butelkę wody w potężne narzędzie
+            sprzedaży. 1 kampania = 1 marka na etykiecie. Klient otrzymuje
+            przydatny prezent, a Państwo – czysty kontakt bez cyfrowego szumu i
+            konkurencji.
           </p>
         </div>
 

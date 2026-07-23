@@ -13,7 +13,7 @@ const stats = [
   { value: "50K+", label: "Butelki to dla nas żaden problem" },
   { value: "25+", label: "Dostępnych lokalizacji w Warszawie" },
   { value: "100%", label: "Wyłączność marki na partii" },
-  { value: "12%", label: "Prognozowana konwersja na lead" },
+  { value: "12%", label: "Prognozowana konwersja na lead", detail: "wskaźnik docelowy na wzór rynków światowych" },
 ];
 
 const workCards = [
@@ -104,6 +104,7 @@ export const ShowcaseSection = () => {
               <div className="stat-card" key={s.label}>
                 <div className="stat-card__value">{s.value}</div>
                 <div className="stat-card__label">{s.label}</div>
+            {s.detail && <div className="stat-card__det">*wskaźnik docelowy na wzór rynków światowych</div>}
               </div>
             ))}
           </div>

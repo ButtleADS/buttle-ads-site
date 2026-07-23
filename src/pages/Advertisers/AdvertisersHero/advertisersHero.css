@@ -30,11 +30,18 @@
 }
 
 .advertisers-hero__subtitle {
+  font-weight: 700;
+  padding-bottom: 10px;
   color: var(--c-muted);
   font-size: var(--fs-lg);
   line-height: 1.7;
 }
 
+.advertisers-hero__text {
+  color: var(--c-muted);
+  font-size: var(--fs-lg);
+  line-height: 1.7;
+}
 @media (min-width: 768px) {
   .advertisers-hero__title { font-size: var(--fs-5xl); }
 }

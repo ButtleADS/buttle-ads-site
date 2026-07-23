@@ -1,11 +1,10 @@
-
 .process-flow {
   padding: 32px 0;
   background: var(--c-text); /* slate-900 */
 }
 
 .process-flow__container {
-  max-width: 960px;
+  max-width: 1060px;
   margin: 0 auto;
   padding: 0 var(--container-px);
 }
@@ -16,7 +15,14 @@
   justify-content: center;
   gap: 32px;
 }
-
+.process-flow__super {
+  font-size: 18px;
+  background-image: linear-gradient(0.25turn, #f69d3c,  #ebf8e1, #f69d3c);
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  /* text-shadow: none; */
+}
 .process-flow__item {
   display: flex;
   align-items: center;
@@ -45,5 +51,7 @@
 }
 
 @media (min-width: 768px) {
-  .process-flow__arrow { display: block; }
+  .process-flow__arrow {
+    display: block;
+  }
 }

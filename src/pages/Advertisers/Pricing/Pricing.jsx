@@ -5,7 +5,7 @@ const plans = [
   {
     name: "Starter",
     desc: "Idealny do testów",
-    number: "5000",
+    number: "1000",
     unit: "butelek",
     features: [
       "Brandowana etykieta",
@@ -18,7 +18,7 @@ const plans = [
   {
     name: "Business",
     desc: "Najpopularniejszy wybór",
-    number: "20 000",
+    number: "1500",
     unit: "butelek",
     features: [
       "Pełny design butelki",
@@ -33,7 +33,7 @@ const plans = [
   {
     name: "Enterprise",
     desc: "Maksymalny zasięg",
-    number: "50 000+",
+    number: "2600",
     unit: "butelek",
     features: [
       "Ekskluzywny design",
